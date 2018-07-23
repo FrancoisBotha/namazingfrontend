@@ -46,15 +46,18 @@ $colors: (
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
+$tab-button-md-active-color:   color($colors, light);
+$tab-button-md-inactive-color:  color($colors, dark);
 
 
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
-
-
+$tabs-md-tab-font-size: 1.75rem;
+$tabs-md-tab-font-size-active: 2rem;
+$tabs-md-tab-text-color: color($colors, dark);
+$tabs-md-tab-text-color-active: color($colors, light);
 
 // App Windows Variables
 // --------------------------------------------------

@@ -7,8 +7,8 @@ import { MenuPage } from "../menu/menu";
     selector: 'page-tabs',
     template: `
         <ion-tabs>
-            <ion-tab [root]="specialsPage" tabTitle="Specials" tabIcon="star"></ion-tab>
-            <ion-tab [root]="menuPage" tabTitle="Menu" tabIcon="book"></ion-tab>
+            <ion-tab [root]="specialsPage" tabTitle="Specials" color="dark"></ion-tab>
+            <ion-tab [root]="menuPage" tabTitle="Menu"></ion-tab>
         </ion-tabs>
     `
 }

@@ -1,13 +1,17 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Namazing
-    </ion-title>
+  <ion-navbar align-title="center">
+      <img src="assets/imgs/NamazingEx1000Sun.png"  style="display:inline-block" height="80px"/>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <p>Vendors displayed here...
-  </p>
-  <button ion-button (click)="onGotToSpecials()"> NAV somewhere ...</button>
+<ion-content>
+   <div>
+      <ion-grid >
+          <ion-row *ngFor="let row of grid">
+            <ion-col class="HomeTiles" width-50 *ngFor="let file_uri of row">
+              <img [src]="file_uri" [navPush]="tabsPage" [navParams]="params">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+  </div>
 </ion-content>

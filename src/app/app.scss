@@ -14,3 +14,18 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.toolbar-background {
+    border-bottom-style: solid;
+    border-bottom-width: thick;
+    border-color: black;
+    text-align: center;
+  }
+
+  .tabbar a[aria-selected=true] {
+    background-color: #2A80B8;
+    font-size: 5rem;
+    color: black;
+    border-top: 3px;
+    border-style: solid;    
+}
