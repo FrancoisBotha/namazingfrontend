@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
-import { HomePage } from '../../pages/home/home';
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the SpecialsPage page.
