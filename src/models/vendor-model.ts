@@ -24,7 +24,7 @@ export class VendorModel implements Serializable<VendorModel> {
     this._vendorCde     = input.vendorCde;
     this._num           = input.num;
     this._vendorName    = input.vendorName;
-    this._vendorLogoUrl = input.vendorLogUrl;
+    this._vendorLogoUrl = input.vendorLogoUrl;
 
     return this;
 

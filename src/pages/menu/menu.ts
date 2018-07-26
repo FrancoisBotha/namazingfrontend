@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, App } from 'ionic-angular';
 import { HomePage } from '../home/home';
+import { VendorModel } from '../../models/vendor-model';
 
 @IonicPage()
 @Component({
@@ -11,9 +12,13 @@ export class MenuPage {
 
   homePage:any = HomePage;
 
+  private vendor: VendorModel;
+
   constructor(public navCtrl: NavController, 
               public navParams: NavParams,
               public appCtrl: App) {
+
+    this.vendor = this.navParams.data;          
   }
 
   onGoHome() {

@@ -12,11 +12,11 @@ export class ConfigService {
   private urlSpecial: string;
   private urlMenu: string;
 
-//   private ENV: string = 'DEVELOP';
-//   private srvAddress: string = 'http://10.1.1.202:1336/';
+  private ENV: string = 'DEVELOP';
+  private srvAddress: string = 'http://localhost:18001/';
 
-  private ENV: string = 'PRODUCTION';
-  private srvAddress: string = 'https://www.namazing.app/';
+  // private ENV: string = 'PRODUCTION';
+  // private srvAddress: string = 'https://www.namazing.app/';
 
   constructor() {
 

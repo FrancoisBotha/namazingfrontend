@@ -3,11 +3,11 @@ import 'rxjs/add/operator/map';
 
 
 interface Serializable<T> {
-    deserialize(input: any): menuModel;
+    deserialize(input: any): MenuModel;
 }
 
 @Injectable()
-export class menuModel implements Serializable<menuModel> {
+export class MenuModel implements Serializable<MenuModel> {
 
   private _id: string;
   private _vendorId: string;
@@ -19,7 +19,7 @@ export class menuModel implements Serializable<menuModel> {
   // constructor() {
   // }
 
-  public deserialize(input: any): menuModel {
+  public deserialize(input: any): MenuModel {
 
     this._id         = input.id;
     this._vendorId   = input.vendorId ;

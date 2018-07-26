@@ -1,6 +1,11 @@
 <ion-header>
   <ion-navbar align-title="center">
       <img src="assets/imgs/NamazingEx1000Sun.png"  style="display:inline-block" height="80px"/>
+      <ion-buttons right>
+          <button ion-button button-clear (click)="onGoInfo()">
+              <img src="assets/imgs/NamazingInfo1000.png"  style="display:inline-block" height="30"/>
+          </button>
+        </ion-buttons>  
   </ion-navbar>
 </ion-header>
 
@@ -8,8 +13,8 @@
    <div>
       <ion-grid >
           <ion-row *ngFor="let row of grid">
-            <ion-col class="HomeTiles" width-50 *ngFor="let file_uri of row">
-              <img [src]="file_uri" [navPush]="tabsPage" [navParams]="params">
+            <ion-col class="HomeTiles" width-50 *ngFor="let vendorObj of row">
+              <img [src]="vendorObj.vendorLogoUrl" [navPush]="tabsPage" [navParams]="vendorObj">
             </ion-col>
           </ion-row>
         </ion-grid>

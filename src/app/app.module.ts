@@ -1,6 +1,3 @@
-
-
-
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -8,12 +5,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 import { HttpClientModule } from '@angular/common/http'  
 
-
 import {HttpService} from '../services/http-service';
-
 
 import {VendorModel} from '../models/vendor-model';
 import {VendorService} from '../services/vendor-service';
+import {SpecialService} from '../services/special-service';
+import {MenuService} from '../services/menu-service';
 import {HelperService} from '../services/helper-service';
 import {ConfigService} from '../services/config-service';
 
@@ -22,6 +19,7 @@ import { HomePage } from '../pages/home/home';
 import { MenuPage } from '../pages/menu/menu';
 import { SpecialsPage } from '../pages/specials/specials';
 import { TabsPage } from '../pages/tabs/tabs';
+import { InfoPage } from '../pages/info/info';
 
 @NgModule({
   declarations: [
@@ -29,7 +27,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     HomePage,
     MenuPage,
     SpecialsPage,
-    TabsPage
+    TabsPage,
+    InfoPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +41,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     HomePage,
     MenuPage,
     SpecialsPage,
-    TabsPage
+    TabsPage,
+    InfoPage
   ],
   providers: [
     StatusBar,
@@ -50,6 +50,8 @@ import { TabsPage } from '../pages/tabs/tabs';
     SplashScreen,
     VendorModel,
     VendorService,
+    SpecialService,
+    MenuService,
     HelperService,
     HttpService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
