@@ -9,15 +9,23 @@
   <ion-navbar>
     <ion-buttons left>
         <button ion-button button-clear (click)="onGoHome()">
-            <img src="assets/imgs/NamazingBack1000.png"  style="display:inline-block" height="30"/>
+            <img src="assets/imgs/NamazingBack1000.png"  style="display:inline-block" height="40"/>
         </button>
       </ion-buttons>    
       <img src="assets/imgs/Namazing1000.png"  style="display:inline-block" height="50px"/>
 </ion-navbar>
 
+<img [src]="vendor.vendorLogoUrl" style="display:block; width: 100%"/>
+
 </ion-header>
 
 
 <ion-content padding>
-    <img [src]="vendor.vendorLogoUrl" style="display:block; width: 100%"/>
+    <ion-list>
+        <button ion-item *ngFor="let menu of menuList" [navPush]="menudtlPage" [navParams]="menu">    
+          <span><h2>{{menu.menuName}}</h2></span>
+          <span item-end>{{menu.menuAmt}}</span>
+          <p>{{menu.menuDesc}}</p>
+        </button> 
+      </ion-list>
 </ion-content>

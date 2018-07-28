@@ -3,7 +3,7 @@
   <ion-navbar>
       <ion-buttons left>
           <button ion-button button-clear (click)="onGoHome()">
-              <img src="assets/imgs/NamazingBack1000.png"  style="display:inline-block" height="30"/>
+              <img src="assets/imgs/NamazingBack1000.png"  style="display:inline-block" height="40"/>
           </button>
         </ion-buttons>    
         <img src="assets/imgs/Namazing1000.png"  style="display:inline-block" height="50px"/>
@@ -13,12 +13,16 @@
 
 
 <ion-content padding>
-  <img [src]="vendor.vendorLogoUrl" style="display:block; width: 100%"/>
-
-  <ion-list>
-    <!-- <ion-item *ngFor="let item of items">
-        Item {{item}}
-    </ion-item>  -->
-  </ion-list>
-
+    <ion-card *ngFor="let special of specialList">
+      <img *ngIf="!special.specialImgUrl" [src]="vendor.vendorLogoUrl" style="display:block; width: 100%"/>
+      <img *ngIf="special.specialImgUrl" [src]="special.specialImgUrl" style="display:block; width: 100%"/>
+      <ion-card-header>
+      </ion-card-header>
+      <ion-card-content> 
+        <ion-card-title>
+            {{special.specialName}}
+        </ion-card-title>
+          <p>{{special.specialDesc}}</p>
+      </ion-card-content>
+    </ion-card>
 </ion-content>

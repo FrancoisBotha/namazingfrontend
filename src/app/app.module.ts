@@ -17,6 +17,7 @@ import {ConfigService} from '../services/config-service';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { MenuPage } from '../pages/menu/menu';
+import { MenudtlPage } from '../pages/menudtl/menudtl';
 import { SpecialsPage } from '../pages/specials/specials';
 import { TabsPage } from '../pages/tabs/tabs';
 import { InfoPage } from '../pages/info/info';
@@ -28,7 +29,8 @@ import { InfoPage } from '../pages/info/info';
     MenuPage,
     SpecialsPage,
     TabsPage,
-    InfoPage
+    InfoPage,
+    MenudtlPage
   ],
   imports: [
     BrowserModule,
@@ -42,7 +44,8 @@ import { InfoPage } from '../pages/info/info';
     MenuPage,
     SpecialsPage,
     TabsPage,
-    InfoPage
+    InfoPage,
+    MenudtlPage
   ],
   providers: [
     StatusBar,

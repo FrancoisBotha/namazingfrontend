@@ -22,6 +22,10 @@ export class MenuService {
                .get(this.urlMenu);
   }
 
+  public vendorMenuList(vendId: string): Array<MenuModel> {
+    return this._MenuArray.filter(menu => menu.vendorId == vendId);
+  }  
+
   set menuArray(inputMenuArray: Array<MenuModel>) {
     this._MenuArray = inputMenuArray;
   }

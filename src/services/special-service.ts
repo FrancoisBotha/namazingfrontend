@@ -22,6 +22,10 @@ export class SpecialService {
                .get(this.urlSpecial);
   }
 
+  public vendorSpecialList(vendId: string): Array<SpecialModel> {
+    return this._specialArray.filter(special => special.vendorId == vendId);
+  }
+
   set specialArray(inputSpecialArray: Array<SpecialModel>) {
     this._specialArray = inputSpecialArray;
   }

@@ -29,3 +29,28 @@
     border-top: 3px;
     border-style: solid;    
 }
+
+.topbar {
+  border-top-style: solid;
+  border-top-width: thick;
+  border-color: black;
+  text-align: center;
+}
+
+.infotextpadding {
+  padding: 2rem
+}
+
+.infotext {
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  font-size: 3rem;
+}
+
+.emailtext {
+  text-align: center;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 3rem;
+}
+
+

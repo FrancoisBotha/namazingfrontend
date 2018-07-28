@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {MenuModel} from '../../models/menu-model';
 
 /**
- * Generated class for the InfoPage page.
+ * Generated class for the MenudtlPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,18 +11,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-info',
-  templateUrl: 'info.html',
+  selector: 'page-menudtl',
+  templateUrl: 'menudtl.html',
 })
-export class InfoPage {
+export class MenudtlPage {
 
-  private infoText: string;
+  private menu: MenuModel;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+    this.menu = this.navParams.data;    
 
-  ionViewDidLoad() {
-    this.infoText = " WANT TO LIST YOUR BUSINESS HERE?";
   }
 
 }

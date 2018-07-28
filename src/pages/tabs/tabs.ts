@@ -22,6 +22,5 @@ export class TabsPage {
     constructor(params: NavParams) {
 
         this.vendor = params.data;
-        console.log(this.vendor);
       }
   }

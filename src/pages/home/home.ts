@@ -95,7 +95,6 @@ export class HomePage {
                   }
                   
                   this.specialService.specialArray = this.specialList;
-                  console.dir(this.specialService.specialArray)      
                   
                   this.loader = this.loadingController.create({
                     content: 'Loading Menus...',
@@ -113,8 +112,15 @@ export class HomePage {
                           this.menuList.push(instance);
                         }
                         
+                        //Ensure even numbers
+                        if (this.vendorList.length % 2 != 0) {
+                          var vendorPlaceHolder = new VendorModel();
+                          vendorPlaceHolder.vendorLogoUrl = "assets/imgs/NamazingOryxCircle1000.png";
+                          vendorPlaceHolder.vendorName = "placeholder";
+                          this.vendorList.push(vendorPlaceHolder);
+                        }
+
                         this.menuService.menuArray = this.menuList;
-                        console.dir(this.menuService.menuArray)        
                         
                         this.grid = Array(Math.ceil(this.vendorList.length/2)); 
               

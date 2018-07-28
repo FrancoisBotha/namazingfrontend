@@ -1,0 +1,32 @@
+
+<ion-header>
+
+    <ion-navbar hideBackButton="true"> 
+        <ion-buttons left>
+            <button navPop ion-button button-clear>
+                <img src="assets/imgs/NamazingBack1000.png"  style="display:inline-block" height="40"/>
+            </button>
+          </ion-buttons>    
+          <img src="assets/imgs/Namazing1000.png"  style="display:inline-block" height="50px"/>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+    <ion-card>
+       <img *ngIf="menu.menuImgUrl" [src]="menu.menuImgUrl" style="display:block; width: 100%"/>
+        <ion-card-header>
+        </ion-card-header>
+        <ion-card-content> 
+          <ion-card-title>
+              {{menu.menuName}}
+          </ion-card-title>
+            <p>{{menu.menuDesc}}</p>
+            <ion-row>
+              <ion-col text-right>
+                  {{menu.menuAmt}}
+              </ion-col>
+            </ion-row>
+        </ion-card-content>
+      </ion-card>
+</ion-content>

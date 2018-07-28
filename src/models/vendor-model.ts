@@ -50,4 +50,12 @@ export class VendorModel implements Serializable<VendorModel> {
     return this._vendorLogoUrl;
   }
 
+  set vendorLogoUrl(vendorLogo: string) {
+    this._vendorLogoUrl = vendorLogo;
+  }
+
+  set vendorName(vendorName: string) {
+    this._vendorName = vendorName;
+  }
+
 }
