@@ -50,6 +50,9 @@ $colors: (
 $tab-button-md-active-color:   color($colors, light);
 $tab-button-md-inactive-color:  color($colors, dark);
 
+$tab-button-ios-active-color:   color($colors, light);
+$tab-button-ios-inactive-color:  color($colors, dark);
+
 
 // App Material Design Variables
 // --------------------------------------------------
@@ -59,6 +62,11 @@ $tabs-md-tab-font-size: 1.75rem;
 $tabs-md-tab-font-size-active: 2rem;
 $tabs-md-tab-text-color: color($colors, dark);
 $tabs-md-tab-text-color-active: color($colors, light);
+
+$tabs-ios-tab-font-size: 1.75rem;
+$tabs-ios-tab-font-size-active: 2rem;
+$tabs-ios-tab-text-color: color($colors, dark);
+$tabs-ios-tab-text-color-active: color($colors, light);
 
 // App Windows Variables
 // --------------------------------------------------
